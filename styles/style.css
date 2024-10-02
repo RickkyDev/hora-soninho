@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jersey+10&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    --header: #384634;
+    --background: #252525;
+    --separador-cat: #1b1b1b;
+    --card-bg: #475747;
+    --text: #eeeeee;
+    --alt-text: #000000;
+    --sec-text: #cccccc;
+    --button: #3e4632;
+    --alt-button: #d1e6cf;
+    --footer-bg: #7e715f;
+    --dropshadow: 4px 4px 5  px rgba(0, 0, 0, 0.2);
+}
+
+body {
+    font-family: Poppins;
+    background-color: var(--background);
+    color: var(--text);
+}
+
+button, a {
+    cursor: pointer;
+}
+
+/* Inicio cabeçalho */
+
+.cabecalho {
+    background-color: var(--header);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 1em 2em;
+    margin: .5em;
+    border-radius: 32px;
+    box-shadow: var(--dropshadow)
+}
+
+.cabecalho h1 {
+    color: var(--text);
+    font-size: 42px;
+    font-weight: 700;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.cabecalho button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
+    background-color: var(--alt-button);
+    border: none;
+    border-radius: 100px;
+    padding: 1em 2em;
+    box-shadow: var(--dropshadow)
+}
+
+.cabecalho button p {
+    color: var(--alt-text);
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.cabecalho button img {
+    width: 24px;
+}
+
+
+/* Final do cabeçalho, começo da seção card de historias */
+
+.titulo-categoria {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 16px;
+    background-color: var(--separador-cat);
+    padding: .75em .25em;
+    margin: .5em;
+    border-radius: 32px;
+    font-size: 20px;
+    box-shadow: var(--dropshadow);
+}
+
+.titulo-categoria img {
+    margin-left: 1em;
+    height: 24px;
+}
+
+.historias {
+    display: flex;
+}
+
+.card-historia {
+    display: flex;
+    flex-direction: column;
+    margin: 1em;
+    height: 400px;
+    width: 250px;
+    background-color: var(--card-bg);
+    border-radius: 16px;
+    color: var(--text);
+    box-shadow: var(--dropshadow);
+}
+
+.img-historia {
+    width: 250px;
+    border-radius: 16px 16px 0 0;
+}
+
+.card-texto {
+    margin: 1em;
+    color: var(--text);
+}
+
+.titulo-botao {
+    display: flex;
+    justify-content: space-between;
+}
+
+.titulo-botao h2 {
+    font-size: 24px;
+    font-weight: 500;
+    margin: 0 16px 16px 0;
+}
+
+.botao-ler {
+    background-color: var(--button);
+    padding: .75em;
+    border-radius: 50%;
+    height: fit-content;
+    width: fit-content;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.164);;
+}
+
+.botao-ler img {
+    width: 26px;
+}
+
+.card-texto p {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.25;
+    color: var(--sec-text);
+}
+
+/* Final da seção cards de histórias, começo do rodapé */
+
+footer {
+    background-color: var(--footer-bg);
+    color: var(--text);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 1em 6em;
+}
+
+.rodape-texto {
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.rodape-texto a {
+    color: var(--sec-text);
+    text-decoration: underline;
+}
+
+.rodape-links ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 12px;
+    margin: 1em;
+}
+
+.rodape-links li {
+    background-color: var(--button);
+    padding: .5em 1em;
+    border-radius: 100px;
+}
+
+.rodape-links li a {
+    color: var(--text);
+}
+
+.dev-por {
+    margin-top: 1em;
+    font-size: 14px;
+}
