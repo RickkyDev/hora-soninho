@@ -2,16 +2,20 @@
 
 :root {
     --header: #384634;
+    --header-hover: #2e3a2b;
+    /* Fundos */
     --background: #252525;
+    --footer-bg: #726556;
     --separador-cat: #1b1b1b;
     --card-bg: #475747;
-    --text: #eeeeee;
+    /* Texto */
+    --text: #ECECEC;
     --alt-text: #000000;
-    --sec-text: #cccccc;
+    --sec-text: #bebebe;
+    /* Botões & Decors */
     --button: #3e4632;
     --alt-button: #d1e6cf;
-    --footer-bg: #7e715f;
-    --dropshadow: 4px 4px 5  px rgba(0, 0, 0, 0.2);
+    --dropshadow: 4px 4px 5px rgba(0, 0, 0, 0.2);
 }
 
 body {
@@ -29,13 +33,25 @@ button, a {
 .cabecalho {
     background-color: var(--header);
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
     text-align: center;
     padding: 1em 2em;
     margin: .5em;
     border-radius: 32px;
-    box-shadow: var(--dropshadow)
+    box-shadow: var(--dropshadow);
+    height: 52px;
+}
+
+.voltar-inicio {
+    padding: .4em;
+    width: 52px;
+}
+
+.voltar-inicio:hover {
+    background-color: var(--header-hover);
+    padding: .4em;
+    border-radius: 100px;
 }
 
 .cabecalho h1 {
@@ -71,7 +87,46 @@ button, a {
 }
 
 
-/* Final do cabeçalho, começo da seção card de historias */
+/* Final do cabeçalho, começo da seção de categorias */
+
+.categorias {
+    background-color: var(--separador-cat);
+    border-radius: 32px;
+    margin: 1em;
+    padding: 0 1em 1em 1em;
+    box-shadow: var(--dropshadow);
+}
+
+.categorias h2 {
+    font-size: 20px;
+    font-weight: 500;
+    padding: 0.75em 0 1em .75em;
+}
+
+.categorias-img {
+    height: 18px;
+}
+
+.categorias ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.botao-categorias {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border: none;
+    background-color: var(--button);
+    color: var(--text);
+    font-size: 16px;
+    padding: .75em 1em;
+    border-radius: 100px;
+    box-shadow: var(--dropshadow);
+}
+
+/* Final da seção de categorias, começo da seção de cards de historias */
 
 .titulo-categoria {
     display: flex;
@@ -93,6 +148,7 @@ button, a {
 
 .historias {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .card-historia {
@@ -148,7 +204,7 @@ button, a {
     color: var(--sec-text);
 }
 
-/* Final da seção cards de histórias, começo do rodapé */
+/* Final da seção de cards de histórias, começo do rodapé */
 
 footer {
     background-color: var(--footer-bg);
@@ -156,7 +212,7 @@ footer {
     display: flex;
     flex-direction: column;
     text-align: center;
-    padding: 1em 6em;
+    padding: 1em 8em;
 }
 
 .rodape-texto {

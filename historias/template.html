@@ -3,8 +3,6 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="styles/reset.css">
-        <link rel="stylesheet" href="styles/style.css">
         <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
@@ -14,11 +12,16 @@
         <meta name="msapplication-TileColor" content="#384634">
         <meta name="msapplication-config" content="/favicon/browserconfig.xml">
         <meta name="theme-color" content="#384634">
+        <link rel="stylesheet" href="/styles/reset.css">
+        <link rel="stylesheet" href="/styles/style.css">
+        <link rel="stylesheet" href="/styles/historias.css">
         <title>Hora do Soninho</title>
     </head>
 <body>
     <header class="cabecalho">
-        <img height="48px" src="../assets/logo.png">
+        <a class="voltar-inicio" href="../index.html">
+            <img class="logo-header" height="48px" src="../assets/logo.png">
+        </a>
         <h1>Hora do Soninho</h1>
         <button>
             <img src="../assets/aleatorio.svg">
@@ -27,10 +30,14 @@
     </header>
     <main>
         <section class="historia">
-            <h1>Titulo da História aqui</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam deserunt corporis, eos recusandae minima excepturi nostrum! Ad temporibus officiis nihil, expedita blanditiis mollitia recusandae dolor quia magni iure sunt. Perferendis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure deserunt unde repudiandae ipsam quis! Cumque neque sed fugit accusamus consequuntur ab esse. Laboriosam temporibus officia debitis veritatis ex sint quae!</p>
+            <div class="corpo-historia">
+                <h1>Titulo da História aqui</h1>
+                <p>Paragrafos aqui</p>
+            </div>
+            <div class="aviso-autoral">
+                <p class="texto-autoral"><strong>[Aviso] </strong>Esta história é um trabalho de ficção, a mesma foi escrita totalmente do zero, fazendo dela uma obra autoral desta página. Qualquer localidade, pessoas ou ocorridos nesta história são fictícios e não remetem a nenhum fato real, tudo presente nesta história tem como única intenção de entretenimento, não há apologias politicas, governamentais ou nenhuma co-relação com estes assuntos ou semelhantes.</p>
+            </div>
         </section>
-        <h3 class="tag-autoral">Esta história é um trabalho de ficção, todas as localidades que não existem na vida real foi criada pelo autor e qualquer semelhança é mera coincidência. Todos os personagens da história são fictícios e não existem na realidade. A história também é um trabalho autoral, ou seja, foi criada por um membro da equipe de desenvolvimento da página.</h3>
     </main>
     <footer>
         <div class="rodape-texto">
@@ -40,7 +47,7 @@
             <ul>
                 <!-- Adicionar links e páginas -->
                 <li><img src=""><a href="#">Sobre o criador</a></li>
-                <li><img src=""><a href="#">GitHub da página</a></li>
+                <li><img src=""><a target="_blank" href="https://github.com/RickkyDev/hora-soninho">GitHub da página</a></li>
                 <li><img src=""><a href="#">Sugira uma história</a></li>
                 <li><img src=""><a href="#">Contato</a></li>
             </ul>
@@ -50,4 +57,3 @@
 <script src="app.js"></script>
 </body>
 </html>
-        

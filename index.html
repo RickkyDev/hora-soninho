@@ -18,26 +18,34 @@
 </head>
 <body>
     <header class="cabecalho">
-        <img height="48px" src="assets/logo.png">
+        <a class="voltar-inicio" href="../index.html">
+            <img class="logo-header" height="48px" src="../assets/logo.png">
+        </a>
         <h1>Hora do Soninho</h1>
-        <button>
+        <button class="hist-aleatoria">
             <img src="assets/aleatorio.svg">
             <p>História alearória</p>
         </button>
     </header>
     <main>
         <section class="categorias">
-
+            <h2>Categorias</h2>
+            <ul>
+                <li><button class="botao-categorias" onclick="scrollToSection('relax')"><img class="categorias-img" src="assets/categorias/relaxante.svg">Relaxante</button></li>
+                <li><button class="botao-categorias" onclick="scrollToSection('aventura')"><img class="categorias-img" src="assets/categorias/aventura.svg">Aventura</button></li>
+                <li><button class="botao-categorias" onclick="scrollToSection('romance')"><img class="categorias-img" src="assets/categorias/romance.svg">Romance</button></li>
+                <li><button class="botao-categorias" onclick="scrollToSection('inspiradora')"><img class="categorias-img" src="assets/categorias/inspiradora.svg">Inspiradora</button></li>
+            </ul>
         </section>
 
-        <div class="titulo-categoria">
+        <div class="titulo-categoria" id="relax">
             <img src="assets/categorias/relaxante.svg">
             <p>Histórias relaxantes</p>
         </div>
-        <section class="historias" id="relax">
+        <section class="historias">
 
             <div class="card-historia" id="cafe-relaxar">
-                <img class="img-historia" src="assets/hist-cafe.jpeg">
+                <img class="img-historia" src="assets/img-historias/hist-cafe.jpeg">
                 <div class="card-texto">
                     <div class="titulo-botao">
                         <h2>Um café para relaxar</h2>
@@ -48,7 +56,7 @@
             </div>
 
             <div class="card-historia" id="genero-musica-nova">
-                <img class="img-historia" src="assets/hist-genero-musica.jpg">
+                <img class="img-historia" src="assets/img-historias/hist-genero-musica.jpg">
                 <div class="card-texto">
                     <div class="titulo-botao">
                         <h2>Um gênero musical calmante</h2>
@@ -57,18 +65,22 @@
                     <p>Já pensou que podemos criar nossos próprios gêneros musicais? Acompanhe o desenvolver da criação de um novo gênero musical criado por Elara em sua jornada emocionante.</p>
                 </div>
             </div>
-
+        </section>
+        <div class="titulo-categoria" id="inspiradora">
+            <img src="assets/categorias/relaxante.svg">
+            <p>Histórias inspiradoras</p>
+        </div>
+        <section class="historias">
             <div class="card-historia" id="cidade-sonhos">
-                <img class="img-historia" src="assets/hist-cidade.jpeg">
+                <img class="img-historia" src="assets/img-historias/hist-cidade.jpeg">
                 <div class="card-texto">
                     <div class="titulo-botao">
                         <h2>A Cidade dos Sonhos</h2>
                         <a class="botao-ler" href="#"><img src="assets/botao-ler.svg"></a>
                     </div>
-                    <p>Embarque nessa história de superação e realização, onde Lucian transforma seu sonho de construir sua própria cidade sustentável e em harmonia em realidade.</p>
+                    <p>Embarque nessa história inspiradora de superação e realização, onde Lucian transforma seu sonho de construir sua própria cidade sustentável e em harmonia em realidade.</p>
                 </div>
             </div>
-
         </section>
     </main>
     <footer>
@@ -79,7 +91,7 @@
             <ul>
                 <!-- Adicionar links e páginas -->
                 <li><img src=""><a href="#">Sobre o criador</a></li>
-                <li><img src=""><a href="#">GitHub da página</a></li>
+                <li><img src=""><a target="_blank" href="https://github.com/RickkyDev/hora-soninho">GitHub da página</a></li>
                 <li><img src=""><a href="#">Sugira uma história</a></li>
                 <li><img src=""><a href="#">Contato</a></li>
             </ul>
