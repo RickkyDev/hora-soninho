@@ -18,6 +18,28 @@
     --dropshadow: 4px 4px 5px rgba(0, 0, 0, 0.2);
 }
 
+/* Inicio customização da barra de rolagem */
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: #1a1a1a;
+    border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #666666;
+    border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #3b3b3b;
+}
+
+/* Fim customização da barra de rolagem, começo geral */
+
 body {
     font-family: Poppins;
     background-color: var(--background);
@@ -28,7 +50,7 @@ button, a {
     cursor: pointer;
 }
 
-/* Inicio cabeçalho */
+/* Fim geral, inicio cabeçalho */
 
 .cabecalho {
     background-color: var(--header);
